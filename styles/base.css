@@ -1,0 +1,130 @@
+:root{
+    --bg: #0b1220;
+    --surface: #121b2e;
+    --text: #f5f7ff;
+    --muted: #cbd5e1;
+    --accent: #7dd3fc;
+    --border: rgba(255, 255, 255, 0.12);
+}
+*{box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header{
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+#course-title{
+  display: block;        
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 0.75rem;
+}
+
+nav{
+  display: flex;          
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+nav a{
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible{
+  background: rgba(125, 211, 252, 0.15);
+  border-color: rgba(125, 211, 252, 0.55);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+main{
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 1.5rem 0 2rem;
+}
+
+h1{
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+.cards{
+  display: grid;      
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 850px){
+  .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card h2{
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card-content{
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+.card-content img{
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+.resources{
+  margin-top: 1rem;
+}
+.resources ul{
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.resources a{
+  color: var(--accent);
+}
+.resources a:hover,
+.resources a:focus-visible{
+  text-decoration: underline;
+}
+footer{
+  border-top: 1px solid var(--border);
+  background: #0a1020;
+  padding: 1rem 0;
+  text-align: center;
+}
+footer p{
+  margin: 0.25rem 0;
+  color: var(--muted);
+}
+
+    
