@@ -1,4 +1,4 @@
-/* March 5th 2026*/
+/* March 5th 2026 */
 :root {
   --blue: #1f5678;
   --dark: #2f2f2f;
@@ -6,17 +6,23 @@
   --border: #b9b9b9;
   --footer-yellow: #ffe84f;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
 }
+
 body {
-  margin: 0;
   font-family: "Quicksand", Arial, sans-serif;
   background: #f2f2f2;
   color: #111;
 }
 header {
   background: var(--blue);
+  width: 100%;
 }
 #course-title {
   display: block;
@@ -51,7 +57,7 @@ nav a:focus-visible {
 main {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 18px 18px 0;
+  padding: 18px 18px 10px;
 }
 h1 {
   text-align: center;
@@ -104,25 +110,18 @@ h1 {
 }
 .location-title {
   text-align: center;
-  font-size: 1.10rem;
+  font-size: 1.1rem;
   margin: 10px 0 4px;
   font-weight: 700;
   line-height: 1.2;
-  margin-left: 0;
 }
-.divider{
+.divider {
   width: 62%;
   margin: 0 auto 16px;
   border: none;
   border-top: 1px solid #cfcfcf;
 }
-.about-card hr {
-  width: 60%;
-  margin: 8px auto 16px;
-  border: none;
-  border-top: 1px solid #c9c9c9;
-}
-.about-bottom{
+.about-bottom {
   display: grid;
   grid-template-columns: 135px 1fr;
   gap: 20px;
@@ -162,11 +161,13 @@ h1 {
   color: #0000ee;
 }
 footer {
-  margin-top: 14px;
+  width: 100%;
+  display: block;
   background: var(--blue);
   color: white;
   text-align: center;
   padding: 18px 10px 16px;
+  margin-top: 14px;
 }
 footer p {
   margin: 4px 0;
