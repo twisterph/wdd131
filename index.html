@@ -3,79 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>WDD 131 – Dynamic Web Fundamentals – Pablo HInojosa</title>
+  <title>WDD 131 – Dynamic Web Fundamentals – Pablo C. Hinojosa</title>
   <meta
     name="description"
-    content="WDD 131 – Dynamic Web Fundamentals | Pablo Hinojosa| Course home page featuring an about section, local images, and web development resources."
-  />
-  <meta name="author" content="Pablo Hinoojosa" />
-
- 
+    content="WDD 131 – Dynamic Web Fundamentals | Pablo C. Hinojosa | Course home page featuring an about section, local images, and web development resources." />
+  <meta name="author" content="Pablo C. Hinojosa" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles/base.css" />
   <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
   <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
-
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
     <nav aria-label="Main navigation">
       <a href="https://www.linkedin.com/in/pablo-hinojosa-b2012b367" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">I-Learn</a>
       <a
         href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p36#p36"
         target="_blank"
-        rel="noopener noreferrer"
-      >Favorite Scripture</a>
-      <a href="#" title="Placeholder link for now">Final Project</a>
+        rel="noopener noreferrer"   >
+        Scripture
+      </a>
+      <a href="#">Final Project</a>
     </nav>
   </header>
-
   <main>
-    <h1>Pablo Hinojosaa</h1>
-
-    <section class="cards">
-      <section class="card">
+    <h1>Pablo C. Hinojosa</h1>
+    <div class="cards">
+      <section class="card about-card">
         <h2>About Me</h2>
-        <div class="card-content">
-          <img src="images/profile.jpg" alt="Portrait of Your Name" width="360" height="360" loading="lazy" />
+        <div class="about-top">
           <p>
-            Hello! I’m Pablo Hinojosa. I’m taking WDD 131 because is a requirement also to strengthen my skills in HTML, CSS, and JavaScript.
-            This page will be my course landing page where I practice concepts and share helpful links and resources.
+            My name is Pablo Hinojosa. I live in Lake Havasu City, Arizona, United States. I am currently studying web development taking this course because it is a requirement and improving my skills in HTML, CSS, and JavaScript. I enjoy learning new things, spending time with my family, and working toward my goals every day.
+          </p>
+          <img src="images/profile.jpg" alt="Portrait of Pablo Hinojosa" width="300" height="360" loading="lazy"/>
+        </div>
+        <h3 class="location-title">Arizona, United States</h3>
+        <hr class="divider" />
+        <div class="about-bottom">
+          <figure>
+            <img
+              src="images/flag.jpg"
+              alt="Official flag of Arizona"
+              width="220"
+              height="140"
+              loading="lazy"
+            />
+            <figcaption>Official Flag of United States</figcaption>
+          </figure>
+          <p>
+            Arizona is located in the southwestern United States and is known for its desert landscapes, mountains, and beautiful sunsets. It is home to famous places such as the Grand Canyon and has a rich history and culture. I appreciate living here because of the opportunities to learn, work, and grow but also surviving to the extreme heat of the desert.
           </p>
         </div>
       </section>
-
-      <section class="card">
-        <h2>United States/Arizona</h2>
-        <div class="card-content">
-          <img src="images/country.jpg" alt="Landscape or landmark representing my country or state" width="520" height="360" loading="lazy" />
-          <p>
-            I live in <strong>Arizona/United States</strong>. I enjoy the community here and i'm grateful for the opportunities to learn and grow every day.
-            This section highlights something meaningful about where I live.
-          </p>
-        </div>
+      <section class="card resources-card">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+          <li><a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">Lorem Picsum Image Placeholder</a></li>
+        </ul>
       </section>
-    </section>
-
-    <section class="card resources">
-      <h2>Web Dev Resources</h2>
-      <ul>
-        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
-        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
-        <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">HTML Validator</a></li>
-        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">CSS Validator</a></li>
-      </ul>
-    </section>
+    </div>
   </main>
-
   <footer>
-    <p>&copy; <span id="currentyear"></span> Pablo Hinojosa | Arizona/United States</p>
+    <p>&copy;<span id="currentyear"></span>  Pablo C. Hinojosa | Arizona, United States</p>
     <p id="lastModified"></p>
   </footer>
 </body>
