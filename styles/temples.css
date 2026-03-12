@@ -47,9 +47,12 @@ header h2 {
   color: var(--white);
   cursor: pointer;
 }
-.navigation {
+nav {
   display: flex;
   flex-direction: column;
+}
+.navigation {
+
   position: absolute;
   top: 100%;
   left: 0;

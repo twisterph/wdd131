@@ -2,7 +2,13 @@
   #menu-button {
     display: none;
   }
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
 
+}
   .navigation {
     position: static;
     flex-direction: row;
