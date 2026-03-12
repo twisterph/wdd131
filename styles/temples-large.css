@@ -2,22 +2,26 @@
   #menu-button {
     display: none;
   }
+
+  .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
   nav {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
 
-}
   .navigation {
     position: static;
-    flex-direction: row;
     width: auto;
     max-height: none;
     overflow: visible;
-    gap: 1rem;
   }
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+}

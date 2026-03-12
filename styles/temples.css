@@ -12,7 +12,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -40,6 +41,7 @@ header {
 header h2 {
   font-size: 2rem;
 }
+
 #menu-button {
   font-size: 2rem;
   border: none;
@@ -51,14 +53,13 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.navigation {
 
+.navigation {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   background-color: var(--petroleum-blue);
-
   max-height: 0;
   overflow: hidden;
 }
@@ -66,7 +67,6 @@ nav {
 .navigation.open {
   max-height: 500px;
 }
-
 .navigation a {
   color: var(--white);
   text-decoration: none;
@@ -92,18 +92,15 @@ main h1 {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
 }
-
 figure {
   text-align: center;
 }
-
 figure img {
   width: 300px;
   height: 200px;
@@ -115,7 +112,6 @@ figcaption {
   color: var(--petroleum-blue);
   font-size: 1.2rem;
 }
-
 footer {
   background-color: var(--petroleum-blue);
   color: var(--white);
