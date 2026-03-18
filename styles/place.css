@@ -1,7 +1,7 @@
 
 :root {
-  --primary-color: #d52b1e;   /* Chile red */
-  --secondary-color: #002868; /* Navy blue (better Chile tone) */
+  --primary-color: #d52b1e;   
+  --secondary-color: #002868; 
   --accent-color: #ffffff;
   --background-color: #f4f4f4;
   --card-color: rgba(255, 255, 255, 0.9);
@@ -23,7 +23,6 @@ body {
   background-color: var(--background-color);
 }
 
-/* HEADER */
 header {
   background-color: var(--primary-color);
   color: var(--heading-color);
@@ -36,15 +35,11 @@ header h1 {
   margin: 0;
   font-size: 2.5rem;
 }
-
-/* MAIN */
 main {
   max-width: var(--max-width);
   margin: 0 auto;
   position: relative;
 }
-
-/* HERO */
 .hero picture,
 .hero img {
   display: block;
@@ -52,7 +47,6 @@ main {
   height: auto;
 }
 
-/* CARDS (mobile layout) */
 .info-card {
   background-color: var(--accent-color);
   padding: 1.5rem;
@@ -82,13 +76,11 @@ main {
   font-weight: 700;
 }
 
-/* WEATHER ICON (mobile) */
 .weather-icon-mobile {
   display: block;
   margin: 0 auto 1rem;
 }
 
-/* FOOTER */
 footer {
   background-color: var(--primary-color);
   color: var(--heading-color);
@@ -101,7 +93,6 @@ footer p {
   margin: 0.35rem 0;
 }
 
-/* DESKTOP VIEW */
 @media (min-width: 768px) {
   main {
     min-height: 700px;
@@ -116,7 +107,6 @@ footer p {
     object-fit: cover;
   }
 
-  /* FLOATING CARDS */
   .info-card {
     position: absolute;
     z-index: 1;
@@ -138,16 +128,13 @@ footer p {
     right: 1.5rem;
   }
 
-  /* CARD HEADERS */
   .info-card h2 {
-    background-color: var(--secondary-color); /* navy blue */
+    background-color: var(--secondary-color); 
     color: var(--heading-color);
     margin: -1.5rem -1.5rem 1.5rem -1.5rem;
     padding: 1rem;
     font-size: 1.5rem;
   }
-
-  /* WEATHER ICON (desktop emoji) */
   .weather-card h2::after {
     content: " ⛅";
   }
