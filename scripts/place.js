@@ -1,11 +1,12 @@
+
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 const temperatureElement = document.querySelector("#temperature");
 const windSpeedElement = document.querySelector("#windspeed");
 const windChillElement = document.querySelector("#windchill");
-
 const temperature = 8;
 const windSpeed = 12;
+
 function calculateWindChill(temp, speed) {
   return (13.12 + 0.6215 * temp - 11.37 * speed ** 0.16 + 0.3965 * temp * speed ** 0.16).toFixed(1);
 }

@@ -1,23 +1,22 @@
+
 :root {
   --red: #d52b1e;
   --navy: #002868;
   --white: #ffffff;
+  --light-gray: #f7f7f7;
   --card-bg: rgba(255, 255, 255, 0.82);
   --text-dark: #111111;
   --shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
-
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
   color: var(--text-dark);
   background-color: var(--white);
 }
-
 header {
   background-color: var(--red);
   color: var(--white);
@@ -25,38 +24,31 @@ header {
   padding: 2rem 1rem 2.25rem;
   border-bottom: 1rem solid var(--navy);
 }
-
 header h1 {
   margin: 0;
   font-size: 4rem;
   font-weight: 700;
 }
-
 main {
   margin: 0;
 }
-
 .hero {
   position: relative;
 }
-
 .hero picture,
 .hero img {
   display: block;
   width: 100%;
 }
-
 .hero img {
   height: 700px;
   object-fit: cover;
 }
-
 .card {
   background-color: var(--card-bg);
   box-shadow: var(--shadow);
   padding: 1.25rem 1.5rem 1.5rem;
 }
-
 .card h2 {
   margin: -1.25rem -1.5rem 1.25rem -1.5rem;
   padding: 1.15rem 1.25rem;
@@ -65,37 +57,42 @@ main {
   font-size: 2.2rem;
   font-weight: 700;
 }
-
 .card ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .card li {
   margin: 0.8rem 0;
   font-size: 1.1rem;
   line-height: 1.35;
 }
-
 .card strong {
   font-weight: 700;
 }
-
-.icon {
+.mobile-weather-section {
+  text-align: center;
+  background-color: var(--light-gray);
+  padding: 2rem 1.25rem;
+  border-top: 1px solid #dddddd;
+}
+.mobile-weather-section h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2.25rem;
+  color: var(--text-dark);
+}
+.mobile-weather-icon {
   display: block;
-  margin: 0 auto 1rem;
   width: 90px;
   height: auto;
+  margin: 0 auto;
 }
-
 footer {
   background-color: var(--red);
   color: var(--white);
   text-align: center;
   padding: 1.5rem 1rem 1.75rem;
 }
-
 footer p {
   margin: 0.25rem 0;
   font-size: 1rem;
@@ -106,30 +103,25 @@ footer p {
   .hero {
     min-height: 700px;
   }
-
   .card {
     position: absolute;
     z-index: 2;
   }
-
   .left {
     top: 45px;
     left: 24px;
     width: 375px;
   }
-
   .right {
     right: 20px;
     bottom: 42px;
     width: 320px;
   }
-
   .right h2::after {
     content: " ⛅";
     font-size: 1.8rem;
   }
-
-  .icon {
+  .mobile-weather-section {
     display: none;
   }
 }
@@ -138,42 +130,29 @@ footer p {
   header {
     padding: 1.5rem 1rem;
   }
-
   header h1 {
     font-size: 2.5rem;
   }
-
   .hero img {
     height: auto;
   }
-
-  .card {
+  .left {
     text-align: center;
     padding: 2rem 1.25rem;
     border-top: 1px solid #dddddd;
     box-shadow: none;
-    background-color: #f7f7f7;
+    background-color: var(--light-gray);
   }
-
-  .card h2 {
+  .left h2 {
     margin: 0 0 1.5rem 0;
     padding: 0;
     background: none;
     color: var(--text-dark);
     font-size: 2.25rem;
   }
-
-  .icon {
-    display: block;
-    width: 90px;
-    height: auto;
-    margin: 0 auto 1.25rem;
+  .right {
+    display: none;
   }
-
-  .right h2::after {
-    content: "";
-  }
-
   footer p {
     font-size: 0.95rem;
   }
