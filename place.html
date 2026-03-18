@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madagascar | Place Page</title>
-  <meta name="description" content="A responsive place page featuring Madagascar.">
+  <title>Chile | Place Page</title>
+  <meta name="description" content="A responsive place page featuring Chile.">
   <meta name="author" content="Pablo Hinojosa">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
   <header>
-    <h1>Madagascar</h1>
+    <h1>Chile</h1>
   </header>
 
   <main>
@@ -26,24 +27,22 @@
         <source srcset="images/hero-large.webp" media="(min-width: 768px)">
         <img
           src="images/hero-small.webp"
-          alt="Lemurs in Madagascar"
+          alt="Beautiful landscape in Chile with mountains"
           width="1500"
           height="750"
         >
-      </picture>
-    </section>
-
+      </picture> 
     <section class="info-card data-card">
       <h2>Data</h2>
       <ul>
-        <li><span class="label">Area:</span> 587,041 sq km</li>
-        <li><span class="label">Population:</span> 27,691,018</li>
-        <li><span class="label">Capital:</span> Antananarivo</li>
-        <li><span class="label">Languages:</span> Malagasy, French</li>
-        <li><span class="label">Currency:</span> Malagasy Ariary</li>
-        <li><span class="label">Time Zone:</span> UTC+3</li>
-        <li><span class="label">Calling Code:</span> +261</li>
-        <li><span class="label">Internet TLD:</span> .mg</li>
+        <li><span class="label">Area:</span> 756,102 sq km</li>
+        <li><span class="label">Population:</span> 19.6 million</li>
+        <li><span class="label">Capital:</span> Santiago</li>
+        <li><span class="label">Languages:</span> Spanish</li>
+        <li><span class="label">Currency:</span> Chilean Peso</li>
+        <li><span class="label">Time Zone:</span> CLT (UTC−4)</li>
+        <li><span class="label">Calling Code:</span> +56</li>
+        <li><span class="label">Internet TLD:</span> .cl</li>
       </ul>
     </section>
 
@@ -52,21 +51,21 @@
       <img
         class="weather-icon-mobile"
         src="images/weather.svg"
-        alt="Partly cloudy weather icon"
+        alt="Partly cloudy weather"
         width="90"
         height="90"
       >
+
       <ul>
-        <li><span class="label">Temperature:</span> <span id="temperature">10</span> °C</li>
+        <li><span class="label">Temperature:</span> <span id="temperature">8</span> °C</li>
         <li><span class="label">Conditions:</span> Partly Cloudy</li>
-        <li><span class="label">Wind:</span> <span id="windspeed">5</span> km/h</li>
+        <li><span class="label">Wind:</span> <span id="windspeed">12</span> km/h</li>
         <li><span class="label">Wind Chill:</span> <span id="windchill"></span></li>
       </ul>
     </section>
   </main>
-
   <footer>
-    <p>&copy;<span id="currentyear"></span> Pablo Hinojosa | Madagascar</p>
+    <p>&copy; <span id="currentyear"></span> Pablo Hinojosa | Chile</p>
     <p id="lastModified"></p>
   </footer>
 </body>

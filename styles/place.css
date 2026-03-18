@@ -1,13 +1,10 @@
 :root {
-  --primary-color: #d90429;
-  --secondary-color: #00843d;
-  --accent-color: #f2f2f2;
-  --card-color: rgba(255, 255, 255, 0.88);
+  --primary-color: #d52b1e; /* red */
+  --secondary-color: #0039a6; /* blue */
+  --accent-color: #ffffff;
+  --card-color: rgba(255, 255, 255, 0.9);
   --text-color: #111;
   --heading-color: #ffffff;
-  --shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-  --max-width: 1500px;
-  --border-radius: 0.5rem;
 }
 
 * {
@@ -25,8 +22,8 @@ header {
   background-color: var(--primary-color);
   color: var(--heading-color);
   text-align: center;
-  padding: 1.5rem 1rem;
-  border-bottom: 1rem solid var(--secondary-color);
+  padding: 1.5rem;
+  border-bottom: 10px solid var(--secondary-color);
 }
 
 header h1 {
@@ -55,9 +52,8 @@ main {
 }
 
 .info-card h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .info-card ul {
