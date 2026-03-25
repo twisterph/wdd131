@@ -97,16 +97,22 @@ const temples = [
 ];
 function displayTemples(templeList) {
   container.innerHTML = "";
-  templeList.forEach((temple) => {
+
+  templeList.forEach((temple, index) => {
     const card = document.createElement("article");
     card.classList.add("temple-card");
 
     const image = document.createElement("img");
     image.src = temple.imageUrl;
     image.alt = `${temple.templeName} Temple`;
-    image.loading = "lazy";
     image.width = 400;
-    image.height = 250;
+    image.height = 300;
+
+    if (index === 0) {
+      image.setAttribute("fetchpriority", "high");
+    } else {
+      image.loading = "lazy";
+    }
 
     const info = document.createElement("div");
     info.classList.add("temple-info");
@@ -118,12 +124,14 @@ function displayTemples(templeList) {
     dedication.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
     const area = document.createElement("p");
     area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
+
     info.appendChild(name);
     info.appendChild(location);
     info.appendChild(dedication);
     info.appendChild(area);
     card.appendChild(image);
     card.appendChild(info);
+
     container.appendChild(card);
   });
 }

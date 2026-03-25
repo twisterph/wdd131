@@ -19,13 +19,14 @@
   .navigation a {
     padding: 0.5rem 1rem;
   }
-
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+    min-height: 900px;
   }
 }
 @media only screen and (min-width: 64rem) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+    min-height: 700px;
   }
 }
