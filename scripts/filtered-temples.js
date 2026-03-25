@@ -118,15 +118,12 @@ function displayTemples(templeList) {
     dedication.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
     const area = document.createElement("p");
     area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
-
     info.appendChild(name);
     info.appendChild(location);
     info.appendChild(dedication);
     info.appendChild(area);
-
     card.appendChild(image);
     card.appendChild(info);
-
     container.appendChild(card);
   });
 }
