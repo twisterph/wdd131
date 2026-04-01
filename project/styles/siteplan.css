@@ -51,7 +51,7 @@ header {
   border: 3px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+/*I saw this effect on a another page hahaha i'd Like it*/
 .logo:hover {
   transform: scale(1.08);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
