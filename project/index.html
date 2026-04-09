@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/project.css">
   <script src="scripts/project.js" defer></script>
@@ -18,7 +18,7 @@
   <header>
     <div class="brand">
       <div class="logo" aria-hidden="true">★</div>
-      <div>
+      <div class="brand-text">
         <p class="site-name">Discover Chile</p>
         <p class="site-tagline">Travel and Culture Guide</p>
       </div>
@@ -42,14 +42,23 @@
         alt="Beautiful mountain landscape in Chile"
         width="1200"
         height="700"
+        loading="eager"
+        fetchpriority="high"
       >
+      <div class="hero-overlay"></div>
+
       <div class="hero-text">
-        <h1>Discover Chile</h1>
-        <p>Explore Chile’s landscapes, culture, food, and unforgettable travel experiences.</p>
+        <h1 class="hero-title">
+          <img src="images/chile-flag.webp" alt="Flag of Chile" class="flag-img">
+          Discover Chile
+        </h1>
+        <p class="hero-subtitle">
+          Explore Chile’s landscapes, culture, food, and unforgettable travel experiences.
+        </p>
       </div>
     </section>
 
-    <section class="card">
+    <section class="card intro-card">
       <h2>Welcome to Chile</h2>
       <p>
         Chile is a long and narrow country in South America known for its incredible natural beauty,
@@ -58,29 +67,32 @@
       </p>
     </section>
 
-    <section>
+    <section class="home-highlights">
       <h2>Why Visit Chile?</h2>
-      <div class="grid">
-        <article class="card">
+      <div class="grid highlight-grid">
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">🏔️</div>
           <h3>Amazing Landscapes</h3>
           <p>Chile is home to deserts, mountains, lakes, glaciers, beaches, and forests.</p>
         </article>
 
-        <article class="card">
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">🎶</div>
           <h3>Rich Culture</h3>
           <p>Visitors can enjoy traditional food, music, art, celebrations, and local customs.</p>
         </article>
 
-        <article class="card">
+        <article class="card feature-card">
+          <div class="feature-icon" aria-hidden="true">📍</div>
           <h3>Great Destinations</h3>
           <p>Popular places include Santiago, Valparaíso, the Atacama Desert, Patagonia, and Easter Island.</p>
         </article>
       </div>
     </section>
 
-    <section class="card">
+    <section class="card facts-card">
       <h2>Quick Facts</h2>
-      <ul>
+      <ul class="facts-list">
         <li>Chile is one of the longest countries in the world.</li>
         <li>Its capital city is Santiago.</li>
         <li>Chile is known for seafood, empanadas, and pastel de choclo.</li>
@@ -88,12 +100,16 @@
       </ul>
     </section>
 
-    <section class="card">
+    <section class="card explore-card">
       <h2>Start Exploring</h2>
       <p>
         Learn about Chile’s most beautiful places, its traditions, and helpful travel tips by exploring
         the pages of this website.
       </p>
+      <div class="explore-links">
+        <a href="places.html" class="cta-link">View Places</a>
+        <a href="culture.html" class="cta-link secondary-link">Learn About Culture</a>
+      </div>
     </section>
   </main>
 
