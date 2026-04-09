@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore famous places in Chile, including the Atacama Desert, Patagonia, Santiago, Valparaiso, and Easter Island.">
+  <meta name="author" content="Pablo Hinojosa">
+  <title>Discover Chile | Places</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+  <script src="scripts/places.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">★</div>
+      <div>
+        <p class="site-name">Discover Chile</p>
+        <p class="site-tagline">Travel and Culture Guide</p>
+      </div>
+    </div>
+
+    <button id="menuButton" aria-label="Open navigation menu">☰</button>
+
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="places.html" class="active">Places</a>
+      <a href="culture.html">Culture</a>
+      <a href="plan.html">Plan Your Trip</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>Places to Visit in Chile</h1>
+      <p class="section-intro">
+        Chile offers amazing destinations from north to south. Use the buttons
+        below to explore places by region.
+      </p>
+    </section>
+
+    <section class="card filter-section">
+      <h2>Filter by Region</h2>
+      <div class="filter-buttons">
+        <button id="allBtn" type="button">All</button>
+        <button id="northBtn" type="button">North</button>
+        <button id="centralBtn" type="button">Central</button>
+        <button id="southBtn" type="button">South</button>
+      </div>
+      <p id="resultsMessage"></p>
+    </section>
+
+    <section>
+      <div id="placesContainer" class="places-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Pablo Hinojosa | Discover Chile 🇨🇱 | WDD 131 | BYU Idaho 😎</p></p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

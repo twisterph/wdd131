@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plan your trip to Chile with this simple interactive form.">
+  <meta name="author" content="Pablo Hinojosa">
+  <title>Discover Chile | Plan Your Trip</title>
+
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+  <script src="scripts/plan.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">★</div>
+    <div>
+      <p class="site-name">Discover Chile</p>
+      <p class="site-tagline">Travel and Culture Guide</p>
+    </div>
+  </div>
+
+  <button id="menuButton">☰</button>
+
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="culture.html">Culture</a>
+    <a href="plan.html" class="active">Plan Your Trip</a>
+    <a href="references.html">References</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h1>Plan Your Trip to Chile</h1>
+    <p>Fill out this form to plan your visit.</p>
+  </section>
+
+  <section class="card">
+    <form id="tripForm">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="region">Preferred Region</label>
+      <select id="region" required>
+        <option value="">Select a region</option>
+        <option value="North">North</option>
+        <option value="Central">Central</option>
+        <option value="South">South</option>
+      </select>
+
+      <label for="season">Best Season to Travel</label>
+      <select id="season" required>
+        <option value="">Select a season</option>
+        <option value="Summer">Summer</option>
+        <option value="Spring">Spring</option>
+        <option value="Winter">Winter</option>
+        <option value="Fall">Fall</option>
+      </select>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Your Saved Plan</h2>
+    <p id="savedData">No saved data yet.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="currentyear"></span> Pablo Hinojosa | Discover Chile 🇨🇱 | WDD 131 | BYU Idaho 😎</p></p>
+  <p id="lastModified"></p>
+  <p><a href="references.html">References</a></p>
+</footer>
+
+</body>
+</html>
