@@ -7,6 +7,10 @@
   <meta name="author" content="Pablo Hinojosa">
   <title>Discover Chile | References</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/project.css">
   <script src="scripts/project.js" defer></script>
 </head>
@@ -14,14 +18,14 @@
 
 <header>
   <div class="brand">
-    <div class="logo">★</div>
-    <div>
+    <div class="logo" aria-hidden="true">★</div>
+    <div class="brand-text">
       <p class="site-name">Discover Chile</p>
       <p class="site-tagline">Travel and Culture Guide</p>
     </div>
   </div>
 
-  <button id="menuButton">☰</button>
+  <button id="menuButton" aria-label="Open navigation menu">☰</button>
 
   <nav class="navigation">
     <a href="index.html">Home</a>
@@ -40,46 +44,19 @@
     </p>
   </section>
 
-<section class="card">
-  <h2>Information Sources</h2>
-  <ul>
-    <li>
-      <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Chile.html" target="_blank">
-        U.S. Department of State – Chile Travel Information
-      </a>
-    </li>
-    <li>
-      <a href="https://www.gov.uk/foreign-travel-advice/chile" target="_blank">
-        UK Government – Foreign Travel Advice: Chile
-      </a>
-    </li>
-    <li>
-      <a href="https://www.smartraveller.gov.au/destinations/americas/chile" target="_blank">
-        Australian Government – Smartraveller: Chile
-      </a>
-    </li>
-    <li>
-      <a href="https://chile.travel/en/" target="_blank">
-        Chile Travel Official Website
-      </a>
-    </li>
-    <li>
-      <a href="https://en.wikipedia.org/wiki/Chile" target="_blank">
-        Wikipedia – Chile
-      </a>
-    </li>
-    <li>
-      <a href="https://www.bcn.cl" target="_blank">
-        Biblioteca del Congreso Nacional de Chile
-      </a>
-    </li>
-    <li>
-      <a href="https://www.chileatiende.gob.cl" target="_blank">
-        ChileAtiende – Public Services Information
-      </a>
-    </li>
-  </ul>
-</section>
+  <section class="card">
+    <h2>Information Sources</h2>
+    <ul>
+      <li><a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Chile.html" target="_blank" rel="noopener">U.S. Department of State – Chile Travel Information</a></li>
+      <li><a href="https://www.gov.uk/foreign-travel-advice/chile" target="_blank" rel="noopener">UK Government – Foreign Travel Advice: Chile</a></li>
+      <li><a href="https://www.smartraveller.gov.au/destinations/americas/chile" target="_blank" rel="noopener">Australian Government – Smartraveller: Chile</a></li>
+      <li><a href="https://chile.travel/en/" target="_blank" rel="noopener">Chile Travel Official Website</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Chile" target="_blank" rel="noopener">Wikipedia – Chile</a></li>
+      <li><a href="https://www.bcn.cl" target="_blank" rel="noopener">Biblioteca del Congreso Nacional de Chile</a></li>
+      <li><a href="https://www.chileatiende.gob.cl" target="_blank" rel="noopener">ChileAtiende – Public Services Information</a></li>
+    </ul>
+  </section>
+
   <section class="card">
     <h2>Image Sources</h2>
     <ul>
@@ -98,7 +75,7 @@
       <li>W3C HTML Validator</li>
       <li>W3C CSS Validator</li>
       <li>Code Chef - Online Compiler</li>
-      <li>Codepen.io</li>
+      <li>CodePen.io</li>
       <li>Squoosh.app</li>
     </ul>
   </section>

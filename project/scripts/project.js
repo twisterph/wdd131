@@ -6,18 +6,23 @@ const lastModified = document.querySelector("#lastModified");
 function toggleMenu() {
   navigation.classList.toggle("open");
 
-  if (navigation.classList.contains("open")) {
-    menuButton.textContent = "✖";
-    menuButton.setAttribute("aria-label", "Close navigation menu");
-  } else {
-    menuButton.textContent = "☰";
-    menuButton.setAttribute("aria-label", "Open navigation menu");
-  }
+  const isOpen = navigation.classList.contains("open");
+
+  menuButton.textContent = isOpen ? "✖" : "☰";
+  menuButton.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
 }
 
 function setFooterInfo() {
-  currentYear.textContent = new Date().getFullYear();
-  lastModified.textContent = `Last Modified: ${document.lastModified}`;
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+  }
+
+  if (lastModified) {
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+  }
 }
 
 if (menuButton && navigation) {

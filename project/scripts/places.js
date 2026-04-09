@@ -48,15 +48,16 @@ const places = [
     alt: "Volcano and lake scenery in Pucon Chile"
   }
 ];
-
 const placesContainer = document.querySelector("#placesContainer");
 const resultsMessage = document.querySelector("#resultsMessage");
 const allBtn = document.querySelector("#allBtn");
 const northBtn = document.querySelector("#northBtn");
 const centralBtn = document.querySelector("#centralBtn");
 const southBtn = document.querySelector("#southBtn");
-
 function displayPlaces(placeList) {
+  if (!placesContainer) {
+    return;
+  }
   const placeCards = placeList.map(
     (place) => `
       <article class="card place-card">
@@ -73,44 +74,51 @@ function displayPlaces(placeList) {
       </article>
     `
   );
-
   placesContainer.innerHTML = placeCards.join("");
 }
-
 function showResultsMessage(placeList, regionName) {
+  if (!resultsMessage) {
+    return;
+  }
   if (placeList.length === 0) {
     resultsMessage.textContent = `No places were found for ${regionName}.`;
   } else {
     resultsMessage.textContent = `Showing ${placeList.length} place(s) in ${regionName}.`;
   }
 }
-
 function filterPlaces(region) {
   if (region === "All") {
     displayPlaces(places);
-    resultsMessage.textContent = `Showing all ${places.length} places.`;
+    if (resultsMessage) {
+      resultsMessage.textContent = `Showing all ${places.length} places.`;
+    }
   } else {
     const filteredPlaces = places.filter((place) => place.region === region);
     displayPlaces(filteredPlaces);
     showResultsMessage(filteredPlaces, region);
   }
 }
-
-allBtn.addEventListener("click", () => {
-  filterPlaces("All");
-});
-
-northBtn.addEventListener("click", () => {
-  filterPlaces("North");
-});
-
-centralBtn.addEventListener("click", () => {
-  filterPlaces("Central");
-});
-
-southBtn.addEventListener("click", () => {
-  filterPlaces("South");
-});
-
+if (allBtn) {
+  allBtn.addEventListener("click", () => {
+    filterPlaces("All");
+  });
+}
+if (northBtn) {
+  northBtn.addEventListener("click", () => {
+    filterPlaces("North");
+  });
+}
+if (centralBtn) {
+  centralBtn.addEventListener("click", () => {
+    filterPlaces("Central");
+  });
+}
+if (southBtn) {
+  southBtn.addEventListener("click", () => {
+    filterPlaces("South");
+  });
+}
 displayPlaces(places);
-resultsMessage.textContent = `Showing all ${places.length} places.`;
+if (resultsMessage) {
+  resultsMessage.textContent = `Showing all ${places.length} places.`;
+}

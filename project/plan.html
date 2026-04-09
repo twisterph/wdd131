@@ -7,82 +7,83 @@
   <meta name="author" content="Pablo Hinojosa">
   <title>Discover Chile | Plan Your Trip</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/project.css">
   <script src="scripts/project.js" defer></script>
   <script src="scripts/plan.js" defer></script>
 </head>
 <body>
-
-<header>
-  <div class="brand">
-    <div class="logo">★</div>
-    <div>
-      <p class="site-name">Discover Chile</p>
-      <p class="site-tagline">Travel and Culture Guide</p>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">★</div>
+      <div class="brand-text">
+        <p class="site-name">Discover Chile</p>
+        <p class="site-tagline">Travel and Culture Guide</p>
+      </div>
     </div>
-  </div>
 
-  <button id="menuButton">☰</button>
+    <button id="menuButton" aria-label="Open navigation menu">☰</button>
 
-  <nav class="navigation">
-    <a href="index.html">Home</a>
-    <a href="places.html">Places</a>
-    <a href="culture.html">Culture</a>
-    <a href="plan.html" class="active">Plan Your Trip</a>
-    <a href="references.html">References</a>
-  </nav>
-</header>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="places.html">Places</a>
+      <a href="culture.html">Culture</a>
+      <a href="plan.html" class="active">Plan Your Trip</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
 
-<main>
-  <section class="card">
-    <h1>Plan Your Trip to Chile</h1>
-    <p>Fill out this form to plan your visit.</p>
-  </section>
+  <main>
+    <section class="card">
+      <h1>Plan Your Trip to Chile</h1>
+      <p>Fill out this form to plan your visit.</p>
+    </section>
 
-  <section class="card">
-    <form id="tripForm">
-      
-      <label for="name">Full Name</label>
-      <input type="text" id="name" required>
+    <section class="card">
+      <form id="tripForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="region">Preferred Region</label>
-      <select id="region" required>
-        <option value="">Select a region</option>
-        <option value="North">North</option>
-        <option value="Central">Central</option>
-        <option value="South">South</option>
-      </select>
+        <label for="region">Preferred Region</label>
+        <select id="region" name="region" required>
+          <option value="">Select a region</option>
+          <option value="North">North</option>
+          <option value="Central">Central</option>
+          <option value="South">South</option>
+        </select>
 
-      <label for="season">Best Season to Travel</label>
-      <select id="season" required>
-        <option value="">Select a season</option>
-        <option value="Summer">Summer</option>
-        <option value="Spring">Spring</option>
-        <option value="Winter">Winter</option>
-        <option value="Fall">Fall</option>
-      </select>
+        <label for="season">Best Season to Travel</label>
+        <select id="season" name="season" required>
+          <option value="">Select a season</option>
+          <option value="Summer">Summer</option>
+          <option value="Spring">Spring</option>
+          <option value="Winter">Winter</option>
+          <option value="Fall">Fall</option>
+        </select>
 
-      <label for="comments">Comments</label>
-      <textarea id="comments"></textarea>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <section class="card">
-    <h2>Your Saved Plan</h2>
-    <p id="savedData">No saved data yet.</p>
-  </section>
-</main>
+    <section class="card">
+      <h2>Your Saved Plan</h2>
+      <p id="savedData">No saved data yet.</p>
+    </section>
+  </main>
 
-<footer>
-  <p>&copy; <span id="currentyear"></span> Pablo Hinojosa | Discover Chile 🇨🇱 | WDD 131 | BYU Idaho 😎</p></p>
-  <p id="lastModified"></p>
-  <p><a href="references.html">References</a></p>
-</footer>
-
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Pablo Hinojosa | Discover Chile 🇨🇱 | WDD 131 | BYU Idaho 😎</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
 </body>
 </html>
